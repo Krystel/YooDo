@@ -26,7 +26,7 @@
         [self.datePicker setTranslatesAutoresizingMaskIntoConstraints:NO];
         [self.datePicker setBackgroundColor:[UIColor whiteColor]];
         [self.datePicker setDatePickerMode:UIDatePickerModeDateAndTime];
-        [self.datePicker setMinimumDate:[NSDate date]];
+        [self.datePicker setMinimumDate:[NSDate date]]; // user cannot add a past to-do
         [self.fake_view addSubview:self.datePicker];
         
         self.deleteTask = [UIButton buttonWithType:UIButtonTypeCustom];
