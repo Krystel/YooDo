@@ -1,0 +1,450 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		40C149C81BA21824001841EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C149C71BA21824001841EA /* main.m */; };
+		40C149CB1BA21824001841EA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C149CA1BA21824001841EA /* AppDelegate.m */; };
+		40C149CE1BA21824001841EA /* YooDo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 40C149CC1BA21824001841EA /* YooDo.xcdatamodeld */; };
+		40C149D11BA21824001841EA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C149D01BA21824001841EA /* ViewController.m */; };
+		40C149D41BA21824001841EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40C149D21BA21824001841EA /* Main.storyboard */; };
+		40C149D61BA21824001841EA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40C149D51BA21824001841EA /* Images.xcassets */; };
+		40C149D91BA21824001841EA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40C149D71BA21824001841EA /* LaunchScreen.xib */; };
+		40C149E51BA21824001841EA /* YooDoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C149E41BA21824001841EA /* YooDoTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		40C149DF1BA21824001841EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40C149BA1BA21824001841EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40C149C11BA21824001841EA;
+			remoteInfo = YooDo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		40C149C21BA21824001841EA /* YooDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YooDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		40C149C61BA21824001841EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40C149C71BA21824001841EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		40C149C91BA21824001841EA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		40C149CA1BA21824001841EA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		40C149CD1BA21824001841EA /* YooDo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = YooDo.xcdatamodel; sourceTree = "<group>"; };
+		40C149CF1BA21824001841EA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		40C149D01BA21824001841EA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		40C149D31BA21824001841EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		40C149D51BA21824001841EA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		40C149D81BA21824001841EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		40C149DE1BA21824001841EA /* YooDoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YooDoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		40C149E31BA21824001841EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40C149E41BA21824001841EA /* YooDoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YooDoTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		40C149BF1BA21824001841EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40C149DB1BA21824001841EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		40C149B91BA21824001841EA = {
+			isa = PBXGroup;
+			children = (
+				40C149C41BA21824001841EA /* YooDo */,
+				40C149E11BA21824001841EA /* YooDoTests */,
+				40C149C31BA21824001841EA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		40C149C31BA21824001841EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40C149C21BA21824001841EA /* YooDo.app */,
+				40C149DE1BA21824001841EA /* YooDoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		40C149C41BA21824001841EA /* YooDo */ = {
+			isa = PBXGroup;
+			children = (
+				40C149C91BA21824001841EA /* AppDelegate.h */,
+				40C149CA1BA21824001841EA /* AppDelegate.m */,
+				40C149CF1BA21824001841EA /* ViewController.h */,
+				40C149D01BA21824001841EA /* ViewController.m */,
+				40C149D21BA21824001841EA /* Main.storyboard */,
+				40C149D51BA21824001841EA /* Images.xcassets */,
+				40C149D71BA21824001841EA /* LaunchScreen.xib */,
+				40C149CC1BA21824001841EA /* YooDo.xcdatamodeld */,
+				40C149C51BA21824001841EA /* Supporting Files */,
+			);
+			path = YooDo;
+			sourceTree = "<group>";
+		};
+		40C149C51BA21824001841EA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				40C149C61BA21824001841EA /* Info.plist */,
+				40C149C71BA21824001841EA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		40C149E11BA21824001841EA /* YooDoTests */ = {
+			isa = PBXGroup;
+			children = (
+				40C149E41BA21824001841EA /* YooDoTests.m */,
+				40C149E21BA21824001841EA /* Supporting Files */,
+			);
+			path = YooDoTests;
+			sourceTree = "<group>";
+		};
+		40C149E21BA21824001841EA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				40C149E31BA21824001841EA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		40C149C11BA21824001841EA /* YooDo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40C149E81BA21824001841EA /* Build configuration list for PBXNativeTarget "YooDo" */;
+			buildPhases = (
+				40C149BE1BA21824001841EA /* Sources */,
+				40C149BF1BA21824001841EA /* Frameworks */,
+				40C149C01BA21824001841EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YooDo;
+			productName = YooDo;
+			productReference = 40C149C21BA21824001841EA /* YooDo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		40C149DD1BA21824001841EA /* YooDoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40C149EB1BA21824001841EA /* Build configuration list for PBXNativeTarget "YooDoTests" */;
+			buildPhases = (
+				40C149DA1BA21824001841EA /* Sources */,
+				40C149DB1BA21824001841EA /* Frameworks */,
+				40C149DC1BA21824001841EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				40C149E01BA21824001841EA /* PBXTargetDependency */,
+			);
+			name = YooDoTests;
+			productName = YooDoTests;
+			productReference = 40C149DE1BA21824001841EA /* YooDoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		40C149BA1BA21824001841EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Krystel Chaccour";
+				TargetAttributes = {
+					40C149C11BA21824001841EA = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					40C149DD1BA21824001841EA = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 40C149C11BA21824001841EA;
+					};
+				};
+			};
+			buildConfigurationList = 40C149BD1BA21824001841EA /* Build configuration list for PBXProject "YooDo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 40C149B91BA21824001841EA;
+			productRefGroup = 40C149C31BA21824001841EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				40C149C11BA21824001841EA /* YooDo */,
+				40C149DD1BA21824001841EA /* YooDoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		40C149C01BA21824001841EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40C149D41BA21824001841EA /* Main.storyboard in Resources */,
+				40C149D91BA21824001841EA /* LaunchScreen.xib in Resources */,
+				40C149D61BA21824001841EA /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40C149DC1BA21824001841EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		40C149BE1BA21824001841EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40C149CB1BA21824001841EA /* AppDelegate.m in Sources */,
+				40C149C81BA21824001841EA /* main.m in Sources */,
+				40C149D11BA21824001841EA /* ViewController.m in Sources */,
+				40C149CE1BA21824001841EA /* YooDo.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40C149DA1BA21824001841EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40C149E51BA21824001841EA /* YooDoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		40C149E01BA21824001841EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40C149C11BA21824001841EA /* YooDo */;
+			targetProxy = 40C149DF1BA21824001841EA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		40C149D21BA21824001841EA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40C149D31BA21824001841EA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		40C149D71BA21824001841EA /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40C149D81BA21824001841EA /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		40C149E61BA21824001841EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		40C149E71BA21824001841EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		40C149E91BA21824001841EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YooDo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		40C149EA1BA21824001841EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YooDo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		40C149EC1BA21824001841EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = YooDoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YooDo.app/YooDo";
+			};
+			name = Debug;
+		};
+		40C149ED1BA21824001841EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = YooDoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YooDo.app/YooDo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		40C149BD1BA21824001841EA /* Build configuration list for PBXProject "YooDo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40C149E61BA21824001841EA /* Debug */,
+				40C149E71BA21824001841EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40C149E81BA21824001841EA /* Build configuration list for PBXNativeTarget "YooDo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40C149E91BA21824001841EA /* Debug */,
+				40C149EA1BA21824001841EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		40C149EB1BA21824001841EA /* Build configuration list for PBXNativeTarget "YooDoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40C149EC1BA21824001841EA /* Debug */,
+				40C149ED1BA21824001841EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		40C149CC1BA21824001841EA /* YooDo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				40C149CD1BA21824001841EA /* YooDo.xcdatamodel */,
+			);
+			currentVersion = 40C149CD1BA21824001841EA /* YooDo.xcdatamodel */;
+			path = YooDo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 40C149BA1BA21824001841EA /* Project object */;
+}
