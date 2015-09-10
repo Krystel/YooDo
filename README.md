@@ -13,3 +13,5 @@ Dependencies are managed via [CocoaPods](http://cocoapods.org/) to simplify inst
 2. Install the dependencies in the root directory via CocoaPods: `$ pod install`
 3. Open `YooDo.xcworkspace` in Xcode.
 4. Build and run the application on your Simulator to start creating to-dos!
+
+![empty list](Assets-github/Github-Empty.png) ![list with completed item](Assets-github/Github-Completed.png) ![list with insert open](Assets-github/Github-Add.png)
