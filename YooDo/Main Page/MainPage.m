@@ -22,6 +22,7 @@
 @property (nonatomic, retain) UIButton *plus_button;
 @property (nonatomic, retain) NSMutableArray *listArray;
 @property (nonatomic, strong) NSDateFormatter *dateFormatter;
+@property (nonatomic, retain) UILabel *noTask;
 @property (nonatomic, strong) IBOutlet UITableView *list_table;
 @property (nonatomic) BOOL isOpen, isNew;
 
@@ -53,6 +54,23 @@
     [[IQKeyboardManager sharedManager] setPreventShowingBottomBlankSpace:YES];
     [[IQKeyboardManager sharedManager] setShouldShowTextFieldPlaceholder:YES];
     
+    // Create and load custom table view
+    [self loadTableView];
+
+    //create a label that is visible only when there's no to-dos (table-array empty)
+    self.noTask = [[UILabel alloc] init];
+    [self.noTask setTranslatesAutoresizingMaskIntoConstraints:NO];
+    [self.noTask setText:@"Free day ahead?\n\nI bet you can come up with a couple of things to do!"];
+    [self.noTask setTextAlignment:NSTextAlignmentCenter];
+    [self.noTask setTextColor:[ColorTheme blue]];
+    [self.noTask setFont:[FontManager bookFontOfSize:20]];
+    [self.noTask setBackgroundColor:[UIColor clearColor]];
+    [self.noTask setNumberOfLines:0];
+    [self.noTask setLineBreakMode:NSLineBreakByWordWrapping];
+    [self.noTask sizeToFit];
+    [self.noTask setHidden:YES];
+    [self.view addSubview:self.noTask];
+    
     // Add a button pinned at the bottom of the screen for add and done actions
     [self.plus_button removeFromSuperview];
     self.plus_button = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -64,15 +82,17 @@
     
     NSMutableDictionary *dict = [NSMutableDictionary dictionary];
     [dict setObject:self.plus_button forKey:@"plus"];
-    
+    [dict setObject:self.noTask forKey:@"notask"];
+
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-40-[notask]-40-|" options:0 metrics:nil views:dict]];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.noTask attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeCenterY multiplier:1.0 constant:0.0]];
+
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:[plus]-10-|" options:0 metrics:nil views:dict]];
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[plus]-10-|" options:0 metrics:nil views:dict]];
   
     // Get all info from Database to populate the list
     [self retrieveData];
     
-    // Create and load custom table view
-    [self loadTableView];
 }
 
 #pragma mark - Table View
@@ -145,6 +165,17 @@
     [Appdelegate.database close];
     
     [self.list_table reloadData];
+
+    if ([self.listArray count] == 0)
+    {
+        [self.list_table bringSubviewToFront:self.noTask];
+        [self.noTask setHidden:NO];
+    }
+    else
+    {
+        [self.list_table sendSubviewToBack:self.noTask];
+        [self.noTask setHidden:YES];
+    }
 }
 
 /*
@@ -166,7 +197,20 @@
                                                      ascending:YES];
         NSArray *sortDescriptors = [NSArray arrayWithObject:sortDescriptor];
         self.listArray = [NSMutableArray arrayWithArray:[self.listArray sortedArrayUsingDescriptors:sortDescriptors]];
+       
         [self.list_table reloadData];
+
+        if ([self.listArray count] == 0)
+        {
+            [self.list_table bringSubviewToFront:self.noTask];
+            [self.noTask setHidden:NO];
+        }
+        else
+        {
+            [self.list_table sendSubviewToBack:self.noTask];
+            [self.noTask setHidden:YES];
+        }
+        
         NSLog(@"Task Inserted Successfully");
     }
     else
@@ -213,6 +257,11 @@
     {
         [self.listArray removeObjectAtIndex:index];
         [self.list_table deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        
+        if ([self.listArray count] == 0)
+            [self.noTask setHidden:NO];
+        else
+            [self.noTask setHidden:YES];
         NSLog(@"Task Deleted Successfully");
     }
     else
@@ -602,6 +651,17 @@
         [self.plus_button addTarget:self action:@selector(plusButtonPressed) forControlEvents:UIControlEventTouchUpInside];
     }
     [self.list_table endUpdates];
+    
+    if ([self.listArray count] == 0)
+    {
+        [self.list_table bringSubviewToFront:self.noTask];
+        [self.noTask setHidden:NO];
+    }
+    else
+    {
+        [self.list_table sendSubviewToBack:self.noTask];
+        [self.noTask setHidden:YES];
+    }
 }
 
 #pragma mark - UITextField delegates
@@ -683,6 +743,7 @@
 -(IBAction)close:(id)sender
 {
     ListCell *cell = (ListCell *)[self.list_table cellForRowAtIndexPath:self.selectedIndexPath];
+    [cell.todo_title resignFirstResponder];
     
     if ([sender tag] == 88) // if from done button : save and close the cell
     {
