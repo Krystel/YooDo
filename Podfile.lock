@@ -1,0 +1,23 @@
+PODS:
+  - Canvas (0.1.2)
+  - FMDB (2.5):
+    - FMDB/standard (= 2.5)
+  - FMDB/common (2.5)
+  - FMDB/standard (2.5):
+    - FMDB/common
+  - HPReorderTableView (0.2)
+  - IQKeyboardManager (3.3.1)
+
+DEPENDENCIES:
+  - Canvas
+  - FMDB
+  - HPReorderTableView
+  - IQKeyboardManager
+
+SPEC CHECKSUMS:
+  Canvas: eb861e3b555d032648146c8ffda1a5dea40059ca
+  FMDB: 96e8f1bcc1329e269330f99770ad4285d9003e52
+  HPReorderTableView: fbecadc7f8b2d5a138d976aa5fe6fbb09524022a
+  IQKeyboardManager: 860a5b9df32cc1435a3e967a08ed87de3e59c12e
+
+COCOAPODS: 0.38.2

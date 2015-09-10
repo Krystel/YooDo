@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Canvas.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FMDB.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>HPReorderTableView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>IQKeyboardManager.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-YooDo.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>090BB205EDE4A730A5B544C606EA0DC0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2780445F2AA427B64599A245D21DE818</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>41B6D7617181EDFE47E6E5F211AE2544</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5B146800B19BCD1D9A72981B7F3756D9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FAE192044F47700D4CBB3A5FF400512F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
